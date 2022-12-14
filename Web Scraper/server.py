@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-  return "<p>My first flask app</p>"
+  return "<p>Hello World!</p>"
 
 @app.route("/get_contests")
 def get_contests():
