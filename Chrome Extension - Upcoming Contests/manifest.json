@@ -13,6 +13,6 @@
   },
   "action": {
     "default_popup": "static/popup.html",
-    "default_icon": "icons/hello_extensions.png"
+    "default_icon": "icons/icon16.png"
   }
 }
