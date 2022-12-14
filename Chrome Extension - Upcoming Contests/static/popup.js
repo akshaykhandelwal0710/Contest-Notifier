@@ -13,6 +13,7 @@ const generate_html = function(contest){
     ret += "<div class = \"time\">" + contest.time + "</div>";
   };
   ret += "<div>" + contest.name + "</div>";
+  ret += "<a href = \"" + contest.link + "\" target = \"_blank\">" + contest.link + "</a>";
   ret += "</div>";
   ret += "</div>";
   return ret;

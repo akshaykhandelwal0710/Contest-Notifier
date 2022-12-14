@@ -1,7 +1,8 @@
 from flask import Flask
-import scraper
+import scraper, time
 
 app = Flask(__name__)
+data = ""
 
 @app.route("/")
 def home():
