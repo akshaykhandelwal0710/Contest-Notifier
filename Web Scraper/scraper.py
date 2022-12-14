@@ -1,6 +1,8 @@
 import requests, datetime
 from bs4 import BeautifulSoup
 
+priority_hours = 24
+
 utcTimeDelta = datetime.timedelta(hours = 0)
 utcTZObject = datetime.timezone(utcTimeDelta, name = "UTC")
 
@@ -14,12 +16,22 @@ def contest_to_json(contest_name, datetime_obj, platform):
   res = "{"
   contest_start = datetime_obj.astimezone(istTZObject).strftime("%d %b, %Y %I:%M %p")
 
+  current_time = datetime.datetime.now()
+  current_time = current_time.replace(tzinfo = istTZObject)
+  difference = datetime_obj - current_time
+  hours = difference.total_seconds() / 3600
+
   res += "\"head\": "
   res += "\"NEXT " + platform.upper() + " CONTEST\""
   res += ", \"time\": "
   res += "\"" + contest_start + "\""
   res += ", \"name\": "
   res += "\"" + contest_name + "\""
+  res += ", \"high_priority\": "
+  if hours <= priority_hours:
+    res += "true"
+  else:
+    res += "false"
   res += "}"
   return res
 

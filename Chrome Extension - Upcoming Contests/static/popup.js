@@ -5,8 +5,14 @@ const generate_html = function(contest){
   ret = "<div class = \"card text-bg-primary mb-3\">";
   ret += "<div class = \"card-header\">" + contest.head + "</div>";
   ret += "<div class = \"card-body text-bg-info\">";
-  ret += "<div class = \"time\">" + contest.time + "</div>";
-  ret += "<div>" + contest.name + "</div>"; 
+  console.log(contest);
+  if (contest.high_priority){
+    ret += "<div class = \"time red_text\">" + contest.time + "</div>";
+  }
+  else{
+    ret += "<div class = \"time\">" + contest.time + "</div>";
+  };
+  ret += "<div>" + contest.name + "</div>";
   ret += "</div>";
   ret += "</div>";
   return ret;
