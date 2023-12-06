@@ -1,0 +1,1409 @@
+<html lang="en"><head>
+  <link rel="shortcut icon" href="https://cdn.codechef.com/favicon.ico" type="image/x-icon">
+  <title>Competitive Programming and Coding Challenges - CodeChef</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Practice in the CodeChef monthly coding contests, and master competitive programming. Get all the information about the rated coding challenges hosted every week.">
+  <meta name="og:image" content="https://cdn.codechef.com/sites/all/themes/abessive/cc-logo.png">
+  <meta name="og:type" content="website">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="index, follow">
+
+  <script async="" src="https://www.clarity.ms/s/0.7.20/clarity.js"></script><script async="" src="https://www.clarity.ms/tag/3wyy3fxv0y"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-C8RQQ7NY18&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-TV5X2M"></script><script>
+    window.CDN_URL = 'https://cdn.codechef.com';
+    window.csrfToken = "957e29db91d9747bffad5414c448b5a6e22ed3c98002c3f77ffa6ce75c33f02e";
+    if (
+      (['pro', 'contests'].includes(window.location.pathname.split('/').filter(Boolean).pop())) ||
+      (['learn', 'games', 'viewsolution',
+        'submit',
+        'practice', 'dashboard', 'getting-started', 'assess', 'college-program', 'practice-old',
+        'roadmap'
+      ].includes(window.location.pathname.split('/').filter(Boolean)[0])) ||
+      (['submit'].includes(window.location.pathname.split('/').filter(Boolean)[1])) ||
+      (['status'].includes(window.location.pathname.split('/').filter(Boolean).slice(-2, -1).pop())) || [
+        // Regex to match the practice and contest submit routes
+        /^\/(submit\/([A-Z]+[A-Z0-9_]*)+|problems\/([A-Z]+[A-Z0-9_]*)+|([A-Z]+[A-Z0-9_]*)+\/submit\/([A-Z]+[A-Z0-9_]*)+|([A-Z]+[A-Z0-9_]*)+\/problems\/([A-Z]+[A-Z0-9_]*)+)$/
+      ].some((regexp) => (regexp.test(window.location.pathname)))
+    ) {
+      const metaElement = document.createElement('meta');
+      metaElement.setAttribute('name', 'viewport');
+      metaElement.setAttribute('content', 'width=device-width, initial-scale=1');
+      document.head.appendChild(metaElement);
+    }
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TV5X2M');
+  </script><meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="module" crossorigin="" src="https://static.codechef.com/build/react2/assets/index.778684d5.js"></script>
+  <link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/index.fac5e4ab.css">
+<style data-jss="" data-meta="MuiSvgIcon">
+.MuiSvgIcon-root {
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  flex-shrink: 0;
+  user-select: none;
+}
+.MuiSvgIcon-colorPrimary {
+  color: #3f51b5;
+}
+.MuiSvgIcon-colorSecondary {
+  color: #f50057;
+}
+.MuiSvgIcon-colorAction {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiSvgIcon-colorError {
+  color: #f44336;
+}
+.MuiSvgIcon-colorDisabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+.MuiSvgIcon-fontSizeInherit {
+  font-size: inherit;
+}
+.MuiSvgIcon-fontSizeSmall {
+  font-size: 1.25rem;
+}
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 2.1875rem;
+}
+</style><style data-jss="" data-meta="MuiPaper">
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+.MuiPaper-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+.MuiPaper-elevation0 {
+  box-shadow: none;
+}
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation2 {
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation3 {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2),0px 3px 4px 0px rgba(0,0,0,0.14),0px 1px 8px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation4 {
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation5 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation6 {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation7 {
+  box-shadow: 0px 4px 5px -2px rgba(0,0,0,0.2),0px 7px 10px 1px rgba(0,0,0,0.14),0px 2px 16px 1px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation8 {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation9 {
+  box-shadow: 0px 5px 6px -3px rgba(0,0,0,0.2),0px 9px 12px 1px rgba(0,0,0,0.14),0px 3px 16px 2px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation10 {
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2),0px 10px 14px 1px rgba(0,0,0,0.14),0px 4px 18px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation11 {
+  box-shadow: 0px 6px 7px -4px rgba(0,0,0,0.2),0px 11px 15px 1px rgba(0,0,0,0.14),0px 4px 20px 3px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation12 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 12px 17px 2px rgba(0,0,0,0.14),0px 5px 22px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation13 {
+  box-shadow: 0px 7px 8px -4px rgba(0,0,0,0.2),0px 13px 19px 2px rgba(0,0,0,0.14),0px 5px 24px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation14 {
+  box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.2),0px 14px 21px 2px rgba(0,0,0,0.14),0px 5px 26px 4px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation15 {
+  box-shadow: 0px 8px 9px -5px rgba(0,0,0,0.2),0px 15px 22px 2px rgba(0,0,0,0.14),0px 6px 28px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation16 {
+  box-shadow: 0px 8px 10px -5px rgba(0,0,0,0.2),0px 16px 24px 2px rgba(0,0,0,0.14),0px 6px 30px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation17 {
+  box-shadow: 0px 8px 11px -5px rgba(0,0,0,0.2),0px 17px 26px 2px rgba(0,0,0,0.14),0px 6px 32px 5px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation18 {
+  box-shadow: 0px 9px 11px -5px rgba(0,0,0,0.2),0px 18px 28px 2px rgba(0,0,0,0.14),0px 7px 34px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation19 {
+  box-shadow: 0px 9px 12px -6px rgba(0,0,0,0.2),0px 19px 29px 2px rgba(0,0,0,0.14),0px 7px 36px 6px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation20 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 20px 31px 3px rgba(0,0,0,0.14),0px 8px 38px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation21 {
+  box-shadow: 0px 10px 13px -6px rgba(0,0,0,0.2),0px 21px 33px 3px rgba(0,0,0,0.14),0px 8px 40px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation22 {
+  box-shadow: 0px 10px 14px -6px rgba(0,0,0,0.2),0px 22px 35px 3px rgba(0,0,0,0.14),0px 8px 42px 7px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation23 {
+  box-shadow: 0px 11px 14px -7px rgba(0,0,0,0.2),0px 23px 36px 3px rgba(0,0,0,0.14),0px 9px 44px 8px rgba(0,0,0,0.12);
+}
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2),0px 24px 38px 3px rgba(0,0,0,0.14),0px 9px 46px 8px rgba(0,0,0,0.12);
+}
+</style><style data-jss="" data-meta="MuiTouchRipple">
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.MuiTouchRipple-ripple {
+  opacity: 0;
+  position: absolute;
+}
+.MuiTouchRipple-rippleVisible {
+  opacity: 0.3;
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+}
+.MuiTouchRipple-ripplePulsate {
+  animation-duration: 200ms;
+}
+.MuiTouchRipple-child {
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiTouchRipple-childLeaving {
+  opacity: 0;
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.MuiTouchRipple-childPulsate {
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {
+  0% {
+    opacity: 0.1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style><style data-jss="" data-meta="MuiButtonBase">
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiButtonBase-root::-moz-focus-inner {
+  border-style: none;
+}
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+@media print {
+  .MuiButtonBase-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+</style><style data-jss="" data-meta="MuiIconButton">
+.MuiIconButton-root {
+  flex: 0 0 auto;
+  color: rgba(0, 0, 0, 0.54);
+  padding: 12px;
+  overflow: visible;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 50%;
+}
+.MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiIconButton-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+@media (hover: none) {
+  .MuiIconButton-root:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-edgeStart {
+  margin-left: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {
+  margin-left: -3px;
+}
+.MuiIconButton-edgeEnd {
+  margin-right: -12px;
+}
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {
+  margin-right: -3px;
+}
+.MuiIconButton-colorInherit {
+  color: inherit;
+}
+.MuiIconButton-colorPrimary {
+  color: #3f51b5;
+}
+.MuiIconButton-colorPrimary:hover {
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorPrimary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-colorSecondary {
+  color: #f50057;
+}
+.MuiIconButton-colorSecondary:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiIconButton-colorSecondary:hover {
+    background-color: transparent;
+  }
+}
+.MuiIconButton-sizeSmall {
+  padding: 3px;
+  font-size: 1.125rem;
+}
+.MuiIconButton-label {
+  width: 100%;
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+</style><style data-jss="" data-meta="MuiBackdrop">
+.MuiBackdrop-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: -1;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiBackdrop-invisible {
+  background-color: transparent;
+}
+</style><style data-jss="" data-meta="MuiTypography">
+.MuiTypography-root {
+  margin: 0;
+}
+.MuiTypography-body2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+.MuiTypography-body1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-caption {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+}
+.MuiTypography-button {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+.MuiTypography-h1 {
+  font-size: 6rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.167;
+  letter-spacing: -0.01562em;
+}
+.MuiTypography-h2 {
+  font-size: 3.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.00833em;
+}
+.MuiTypography-h3 {
+  font-size: 3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+.MuiTypography-h4 {
+  font-size: 2.125rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.235;
+  letter-spacing: 0.00735em;
+}
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+.MuiTypography-subtitle1 {
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  letter-spacing: 0.00938em;
+}
+.MuiTypography-subtitle2 {
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.00714em;
+}
+.MuiTypography-overline {
+  font-size: 0.75rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 2.66;
+  letter-spacing: 0.08333em;
+  text-transform: uppercase;
+}
+.MuiTypography-srOnly {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+.MuiTypography-alignLeft {
+  text-align: left;
+}
+.MuiTypography-alignCenter {
+  text-align: center;
+}
+.MuiTypography-alignRight {
+  text-align: right;
+}
+.MuiTypography-alignJustify {
+  text-align: justify;
+}
+.MuiTypography-noWrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.MuiTypography-gutterBottom {
+  margin-bottom: 0.35em;
+}
+.MuiTypography-paragraph {
+  margin-bottom: 16px;
+}
+.MuiTypography-colorInherit {
+  color: inherit;
+}
+.MuiTypography-colorPrimary {
+  color: #3f51b5;
+}
+.MuiTypography-colorSecondary {
+  color: #f50057;
+}
+.MuiTypography-colorTextPrimary {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.MuiTypography-colorError {
+  color: #f44336;
+}
+.MuiTypography-displayInline {
+  display: inline;
+}
+.MuiTypography-displayBlock {
+  display: block;
+}
+</style><style data-jss="" data-meta="PrivateSwitchBase">
+.jss6 {
+  padding: 9px;
+}
+.jss9 {
+  top: 0;
+  left: 0;
+  width: 100%;
+  cursor: inherit;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+}
+</style><style data-jss="" data-meta="MuiCircularProgress">
+.MuiCircularProgress-root {
+  display: inline-block;
+}
+.MuiCircularProgress-static {
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCircularProgress-indeterminate {
+  animation: MuiCircularProgress-keyframes-circular-rotate 1.4s linear infinite;
+}
+.MuiCircularProgress-colorPrimary {
+  color: #3f51b5;
+}
+.MuiCircularProgress-colorSecondary {
+  color: #f50057;
+}
+.MuiCircularProgress-svg {
+  display: block;
+}
+.MuiCircularProgress-circle {
+  stroke: currentColor;
+}
+.MuiCircularProgress-circleStatic {
+  transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiCircularProgress-circleIndeterminate {
+  animation: MuiCircularProgress-keyframes-circular-dash 1.4s ease-in-out infinite;
+  stroke-dasharray: 80px, 200px;
+  stroke-dashoffset: 0px;
+}
+@-webkit-keyframes MuiCircularProgress-keyframes-circular-rotate {
+  0% {
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes MuiCircularProgress-keyframes-circular-dash {
+  0% {
+    stroke-dasharray: 1px, 200px;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -15px;
+  }
+  100% {
+    stroke-dasharray: 100px, 200px;
+    stroke-dashoffset: -125px;
+  }
+}
+.MuiCircularProgress-circleDisableShrink {
+  animation: none;
+}
+</style><style data-jss="" data-meta="MuiLinearProgress">
+.MuiLinearProgress-root {
+  height: 4px;
+  overflow: hidden;
+  position: relative;
+}
+@media print {
+  .MuiLinearProgress-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+.MuiLinearProgress-colorPrimary {
+  background-color: rgb(182, 188, 226);
+}
+.MuiLinearProgress-colorSecondary {
+  background-color: rgb(251, 158, 191);
+}
+.MuiLinearProgress-buffer {
+  background-color: transparent;
+}
+.MuiLinearProgress-query {
+  transform: rotate(180deg);
+}
+.MuiLinearProgress-dashed {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: MuiLinearProgress-keyframes-buffer 3s infinite linear;
+  margin-top: 0;
+}
+.MuiLinearProgress-dashedColorPrimary {
+  background-size: 10px 10px;
+  background-image: radial-gradient(rgb(182, 188, 226) 0%, rgb(182, 188, 226) 16%, transparent 42%);
+  background-position: 0 -23px;
+}
+.MuiLinearProgress-dashedColorSecondary {
+  background-size: 10px 10px;
+  background-image: radial-gradient(rgb(251, 158, 191) 0%, rgb(251, 158, 191) 16%, transparent 42%);
+  background-position: 0 -23px;
+}
+.MuiLinearProgress-bar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  transition: transform 0.2s linear;
+  transform-origin: left;
+}
+.MuiLinearProgress-barColorPrimary {
+  background-color: #3f51b5;
+}
+.MuiLinearProgress-barColorSecondary {
+  background-color: #f50057;
+}
+.MuiLinearProgress-bar1Indeterminate {
+  width: auto;
+  animation: MuiLinearProgress-keyframes-indeterminate1 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+}
+.MuiLinearProgress-bar1Determinate {
+  transition: transform .4s linear;
+}
+.MuiLinearProgress-bar1Buffer {
+  z-index: 1;
+  transition: transform .4s linear;
+}
+.MuiLinearProgress-bar2Indeterminate {
+  width: auto;
+  animation: MuiLinearProgress-keyframes-indeterminate2 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.15s infinite;
+}
+.MuiLinearProgress-bar2Buffer {
+  transition: transform .4s linear;
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-indeterminate1 {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-indeterminate2 {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+@-webkit-keyframes MuiLinearProgress-keyframes-buffer {
+  0% {
+    opacity: 1;
+    background-position: 0 -23px;
+  }
+  50% {
+    opacity: 0;
+    background-position: 0 -23px;
+  }
+  100% {
+    opacity: 1;
+    background-position: -200px -23px;
+  }
+}
+</style><style data-jss="" data-meta="MuiSwitch">
+.MuiSwitch-root {
+  width: 58px;
+  height: 38px;
+  display: inline-flex;
+  padding: 12px;
+  z-index: 0;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+@media print {
+  .MuiSwitch-root {
+    -webkit-print-color-adjust: exact;
+  }
+}
+.MuiSwitch-edgeStart {
+  margin-left: -8px;
+}
+.MuiSwitch-edgeEnd {
+  margin-right: -8px;
+}
+.MuiSwitch-switchBase {
+  top: 0;
+  left: 0;
+  color: #fafafa;
+  z-index: 1;
+  position: absolute;
+  transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiSwitch-switchBase.Mui-checked {
+  transform: translateX(20px);
+}
+.MuiSwitch-switchBase.Mui-disabled {
+  color: #bdbdbd;
+}
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+  opacity: 0.5;
+}
+.MuiSwitch-switchBase.Mui-disabled + .MuiSwitch-track {
+  opacity: 0.12;
+}
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: #3f51b5;
+}
+.MuiSwitch-colorPrimary.Mui-disabled {
+  color: #bdbdbd;
+}
+.MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+  background-color: #3f51b5;
+}
+.MuiSwitch-colorPrimary.Mui-disabled + .MuiSwitch-track {
+  background-color: #000;
+}
+.MuiSwitch-colorPrimary.Mui-checked:hover {
+  background-color: rgba(63, 81, 181, 0.04);
+}
+@media (hover: none) {
+  .MuiSwitch-colorPrimary.Mui-checked:hover {
+    background-color: transparent;
+  }
+}
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #f50057;
+}
+.MuiSwitch-colorSecondary.Mui-disabled {
+  color: #bdbdbd;
+}
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+  background-color: #f50057;
+}
+.MuiSwitch-colorSecondary.Mui-disabled + .MuiSwitch-track {
+  background-color: #000;
+}
+.MuiSwitch-colorSecondary.Mui-checked:hover {
+  background-color: rgba(245, 0, 87, 0.04);
+}
+@media (hover: none) {
+  .MuiSwitch-colorSecondary.Mui-checked:hover {
+    background-color: transparent;
+  }
+}
+.MuiSwitch-sizeSmall {
+  width: 40px;
+  height: 24px;
+  padding: 7px;
+}
+.MuiSwitch-sizeSmall .MuiSwitch-thumb {
+  width: 16px;
+  height: 16px;
+}
+.MuiSwitch-sizeSmall .MuiSwitch-switchBase {
+  padding: 4px;
+}
+.MuiSwitch-sizeSmall .MuiSwitch-switchBase.Mui-checked {
+  transform: translateX(16px);
+}
+.MuiSwitch-input {
+  left: -100%;
+  width: 300%;
+}
+.MuiSwitch-thumb {
+  width: 20px;
+  height: 20px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+  border-radius: 50%;
+  background-color: currentColor;
+}
+.MuiSwitch-track {
+  width: 100%;
+  height: 100%;
+  opacity: 0.38;
+  z-index: -1;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 7px;
+  background-color: #000;
+}
+</style><style data-jss="" data-meta="MuiTooltip">
+.MuiTooltip-popper {
+  z-index: 1500;
+  pointer-events: none;
+}
+.MuiTooltip-popperInteractive {
+  pointer-events: auto;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow {
+  top: 0;
+  left: 0;
+  margin-top: -0.71em;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow {
+  left: 0;
+  bottom: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: -0.71em;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow {
+  left: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-left: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow {
+  right: 0;
+  width: 0.71em;
+  height: 1em;
+  margin-top: 4px;
+  margin-right: -0.71em;
+  margin-bottom: 4px;
+}
+.MuiTooltip-popperArrow[x-placement*="left"] .MuiTooltip-arrow::before {
+  transform-origin: 0 0;
+}
+.MuiTooltip-popperArrow[x-placement*="right"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 100%;
+}
+.MuiTooltip-popperArrow[x-placement*="top"] .MuiTooltip-arrow::before {
+  transform-origin: 100% 0;
+}
+.MuiTooltip-popperArrow[x-placement*="bottom"] .MuiTooltip-arrow::before {
+  transform-origin: 0 100%;
+}
+.MuiTooltip-tooltip {
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 0.625rem;
+  max-width: 300px;
+  word-wrap: break-word;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.4em;
+  border-radius: 4px;
+  background-color: rgba(97, 97, 97, 0.9);
+}
+.MuiTooltip-tooltipArrow {
+  margin: 0;
+  position: relative;
+}
+.MuiTooltip-arrow {
+  color: rgba(97, 97, 97, 0.9);
+  width: 1em;
+  height: 0.71em;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+}
+.MuiTooltip-arrow::before {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  content: "";
+  display: block;
+  transform: rotate(45deg);
+  background-color: currentColor;
+}
+.MuiTooltip-touch {
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.14286em;
+}
+.MuiTooltip-tooltipPlacementLeft {
+  margin: 0 24px ;
+  transform-origin: right center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementLeft {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementRight {
+  margin: 0 24px;
+  transform-origin: left center;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementRight {
+    margin: 0 14px;
+  }
+}
+.MuiTooltip-tooltipPlacementTop {
+  margin: 24px 0;
+  transform-origin: center bottom;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementTop {
+    margin: 14px 0;
+  }
+}
+.MuiTooltip-tooltipPlacementBottom {
+  margin: 24px 0;
+  transform-origin: center top;
+}
+@media (min-width:600px) {
+  .MuiTooltip-tooltipPlacementBottom {
+    margin: 14px 0;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss74 {
+  color: #000;
+}
+.jss75 {
+  background-color: #000;
+}
+</style><style data-jss="" data-meta="MuiTable">
+.MuiTable-root {
+  width: 100%;
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.MuiTable-root caption {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  caption-side: bottom;
+  letter-spacing: 0.01071em;
+}
+.MuiTable-stickyHeader {
+  border-collapse: separate;
+}
+</style><style data-jss="" data-meta="MuiTableBody">
+.MuiTableBody-root {
+  display: table-row-group;
+}
+</style><style data-jss="" data-meta="MuiTableCell">
+.MuiTableCell-root {
+  display: table-cell;
+  padding: 16px;
+  font-size: 0.875rem;
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  border-bottom: 1px solid
+    rgba(224, 224, 224, 1);
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+}
+.MuiTableCell-head {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.MuiTableCell-body {
+  color: rgba(0, 0, 0, 0.87);
+}
+.MuiTableCell-footer {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+}
+.MuiTableCell-sizeSmall {
+  padding: 6px 24px 6px 16px;
+}
+.MuiTableCell-sizeSmall:last-child {
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox {
+  width: 24px;
+  padding: 0 12px 0 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 12px;
+  padding-right: 16px;
+}
+.MuiTableCell-sizeSmall.MuiTableCell-paddingCheckbox > * {
+  padding: 0;
+}
+.MuiTableCell-paddingCheckbox {
+  width: 48px;
+  padding: 0 0 0 4px;
+}
+.MuiTableCell-paddingCheckbox:last-child {
+  padding-left: 0;
+  padding-right: 4px;
+}
+.MuiTableCell-paddingNone {
+  padding: 0;
+}
+.MuiTableCell-paddingNone:last-child {
+  padding: 0;
+}
+.MuiTableCell-alignLeft {
+  text-align: left;
+}
+.MuiTableCell-alignCenter {
+  text-align: center;
+}
+.MuiTableCell-alignRight {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+.MuiTableCell-alignJustify {
+  text-align: justify;
+}
+.MuiTableCell-stickyHeader {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  position: sticky;
+  background-color: #fafafa;
+}
+</style><style data-jss="" data-meta="MuiTableHead">
+.MuiTableHead-root {
+  display: table-header-group;
+}
+</style><style data-jss="" data-meta="MuiTableRow">
+.MuiTableRow-root {
+  color: inherit;
+  display: table-row;
+  outline: 0;
+  vertical-align: middle;
+}
+.MuiTableRow-root.MuiTableRow-hover:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+.MuiTableRow-root.Mui-selected, .MuiTableRow-root.Mui-selected:hover {
+  background-color: rgba(245, 0, 87, 0.08);
+}
+</style><style data-jss="" data-meta="MUIDataTableBodyCell">
+.jss62 {
+  display: none;
+}
+@media (max-width:599.95px) {
+  .jss63 {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: bold;
+  }
+}
+@media (max-width:599.95px) {
+  .jss64 {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+}
+.jss65 {
+  vertical-align: top;
+}
+@media (max-width:959.95px) {
+  .jss66 {
+    width: calc(50%);
+    height: auto;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .jss66:last-child {
+    border-bottom: none;
+  }
+  .jss66:nth-last-child(2) {
+    border-bottom: none;
+  }
+}
+.jss67 {
+  width: calc(50%);
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.jss67:last-child {
+  border-bottom: none;
+}
+.jss67:nth-last-child(2) {
+  border-bottom: none;
+}
+@media (max-width:959.95px) {
+  .jss68 {
+    width: calc(100%);
+    height: auto;
+    display: inline-block;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+}
+.jss69 {
+  width: calc(100%);
+  height: auto;
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+@media (max-width:959.95px) {
+  .jss70 {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width:959.95px) {
+  .jss71 {
+    width: 50%;
+    box-sizing: border-box;
+  }
+}
+@media (max-width:959.95px) {
+  .jss72 {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+</style><style data-jss="" data-meta="MUIDataTableBodyRow">
+.jss57.Mui-selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss57.mui-row-selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.jss58 {
+  cursor: pointer;
+}
+@media (max-width:959.95px) {
+  .jss59 {
+    margin: 0;
+    padding: 0;
+    border-top: solid 2px rgba(0, 0, 0, 0.15);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.15);
+  }
+}
+@media (max-width:599.95px) {
+  .jss60 {
+    margin: 0;
+    padding: 0;
+    border-top: solid 2px rgba(0, 0, 0, 0.15);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.15);
+  }
+}
+</style><style data-jss="" data-meta="MUIDataTableSelectCell">
+@media print {
+  .jss29 {
+    display: none;
+  }
+}
+.jss30 {
+  top: 0px;
+  z-index: 100;
+  position: sticky;
+}
+.jss31 {
+  left: 0px;
+  z-index: 100;
+  position: sticky;
+}
+.jss32 {
+  cursor: pointer;
+  transition: transform 0.25s;
+}
+.jss33 {
+  transform: rotate(90deg);
+}
+.jss34 {
+  visibility: hidden;
+}
+.jss35 {
+  z-index: 110;
+  background-color: #fff;
+}
+</style><style data-jss="" data-meta="MUIDataTableBody">
+.jss54 {
+  text-align: center;
+}
+@media (max-width:959.95px) {
+  .jss55 td:last-child {
+    border-bottom: none;
+  }
+}
+@media (max-width:599.95px) {
+  .jss56 td:last-child {
+    border-bottom: none;
+  }
+}
+</style><style data-jss="" data-meta="MUIDataTableFilterList">
+.jss22 {
+  margin: 0px 16px 0px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.jss23 {
+  margin: 8px 8px 0px 0px;
+}
+</style><style data-jss="" data-meta="MUIDataTableFooter">
+@media print {
+  .jss73 {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="MUIDataTableHeadCell">
+.jss41 {
+  top: 0px;
+  z-index: 100;
+  position: sticky;
+  background-color: #fff;
+}
+.jss42 {
+  cursor: pointer;
+}
+.jss43[data-x-out-of-boundaries] {
+  display: none;
+}
+.jss44 {
+  display: inline-block;
+}
+.jss45 {
+  cursor: pointer;
+  display: flex;
+}
+.jss46 {
+  cursor: grab;
+}
+.jss47 {
+  height: 20px;
+}
+.jss48 {
+  color: rgba(0, 0, 0, 0.87);
+}
+.jss49 {
+  min-width: 0;
+  margin-left: -8px;
+  margin-right: 8px;
+  text-transform: none;
+}
+.jss50 {
+  display: flex;
+  align-items: center;
+}
+.jss51 {
+  margin-top: -3px;
+  margin-left: 3px;
+}
+.jss52 {
+  margin-top: -3px;
+}
+</style><style data-jss="" data-meta="MUIDataTableHeadRow">
+
+</style><style data-jss="" data-meta="MUIDataTableHead">
+@media (max-width:959.95px) {
+  .jss25 {
+    display: none;
+  }
+}
+.jss26 {
+  display: none;
+}
+@media (max-width:599.95px) {
+  .jss27 {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="MUIDataTable">
+.jss12 {
+  position: absolute;
+}
+.jss13 {
+  outline: none;
+}
+.jss14 {
+  overflow: auto;
+}
+@media print {
+  .jss14 {
+    height: auto !important;
+  }
+}
+.jss15 {
+  height: 100%;
+  overflow: auto;
+}
+.jss16 {
+  height: 100%;
+  overflow: auto;
+}
+.jss17 {
+  height: 100%;
+}
+.jss18 {
+  overflow: auto;
+}
+@media (max-width:959.95px) {
+  .jss18 {
+    overflow: hidden;
+  }
+}
+.jss20 {
+  left: -3000px;
+  position: absolute;
+}
+.jss21 {
+  clip: rect(0 0 0 0);
+  width: 1px;
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+@media print {
+  .datatables-noprint {
+    display: none;
+  }
+}
+</style><style data-jss="" data-meta="makeStyles">
+.jss1 {
+  width: 28px;
+  height: 16px;
+  padding: 0;
+}
+.jss2 {
+  padding: 2px;
+}
+.jss2.jss5 {
+  transform: translateX(12px);
+}
+.jss2.jss5 + .jss4 {
+  opacity: 1;
+  background-color: #6BA5ED;
+}
+.jss3 {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+.jss4 {
+  opacity: 1;
+  border-radius: 20px;
+  background-color: #CDCDCD;
+}
+</style><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><style type="text/css">.alert-box p { font-size: 16px; }</style><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/CompetePage.a59fc3d5.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/CompetePage.d13cea76.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/index.1ec104e2.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Toolbar.5d0715d3.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/index.4969d4b1.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/AccordionSummary.ad88dee4.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Collapse.b2b6cd6e.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/useScrollTrigger.13734ecb.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/createSvgIcon.9cab51d8.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/TextField.d1714d02.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Select.b6bb35c7.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Radio.4c8e572c.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/MenuItem.195c3735.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/PracticePage.65bfc6d8.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/PracticePage.6eb0be28.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/DataGrid.8f1a0cc6.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/index.es.fc586010.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/ArrowForward.de1de531.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/TablePagination.525d0ca5.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/TablePagination.04778bee.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/HorizontalTabPanel.f3586f01.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/HorizontalTabPanel.949454db.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Tabs.ac5a87f0.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/Tabs.c058c334.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Chip.4001069a.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/TwoColumnBox.741c9e58.js"><link rel="stylesheet" href="https://static.codechef.com/build/react2/assets/TwoColumnBox.3add62ff.css"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Autocomplete.8471859c.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Autocomplete.2f3a6824.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/Close.ba97460d.js"><link rel="modulepreload" as="script" crossorigin="" href="https://static.codechef.com/build/react2/assets/useTimer.49dd2879.js"></head>
+
+<body style="background:#1d1e23;">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"><div style="background: rgb(29, 30, 35);"><div class="MuiBackdrop-root _backdrop_pm713_1 undefined" aria-hidden="true" style="opacity: 0; visibility: hidden;"><div class="MuiLinearProgress-root MuiLinearProgress-colorPrimary _progress_pm713_7 MuiLinearProgress-indeterminate" role="progressbar"><div class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Indeterminate"></div><div class="MuiLinearProgress-bar MuiLinearProgress-bar2Indeterminate MuiLinearProgress-barColorPrimary"></div></div></div><header class="_m-header-one_1hqxc_3 _dark_1hqxc_208"><div class="_l-header_1hqxc_35"><div class="_l-header__logo_1hqxc_77"><div class="_l-header__image-2_1hqxc_90"><a href="https://www.codechef.com"><img class="_m-header__image_1hqxc_100 _m-header__image--pc_1hqxc_103" src="https://cdn.codechef.com/images/cc-logo.svg" alt="CodeChef Logo"><img class="_m-header__image_1hqxc_100 _m-header__image--mobile_1hqxc_111" src="https://cdn.codechef.com/images/cc-logo-mobile.svg" alt="CodeChef Logo"></a></div></div><div class="_headerRightContainer_1hqxc_4245"><div style="display: flex; justify-content: center; align-items: center; margin-right: 6px;"><div class="_darkModeContainer_4lpgk_2 _dark_4lpgk_2" title="Switch to Light Mode" style="margin-left: 0px;"><svg class="MuiSvgIcon-root _sunIcon_4lpgk_17 _dark_4lpgk_2" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"></path></svg></div></div><div class="_desktopNavigation_ptswr_2924 _dark_ptswr_307"><div class="_headerNavigation_ptswr_2924"><div class="_navigationRow_ptswr_2928"><a href="/learn" class="_navigationItem_ptswr_2933"><span class="_navigationLink_ptswr_2949 ">Learn</span></a><a class="_navigationItem_ptswr_2933" href="/practice"><span class="_navigationLink_ptswr_2949 ">Practice</span></a><a class="_navigationItem_ptswr_2933" href="/contests"><span class="_navigationLink_ptswr_2949 _activeItemTab_ptswr_2958">Compete</span></a></div></div></div><div class="_l-header__user-block_1hqxc_2133"><div class="_l-header__user-block_1hqxc_2133"><div style="display: flex; align-items: center;"><a class="_m-premium-text-container_1hqxc_212 _dark_1hqxc_208" href="/pro#header"><i class="_i-premium-icon_1hqxc_287"></i><span class="_m-premium-text_1hqxc_212">Upgrade to Pro</span></a><hr class="_m-divider--vertical_1hqxc_258"><div class="_m-login-container--desktop_1hqxc_1984"><button type="button" class="_m-login-button-no-border_1hqxc_1993 _dark_1hqxc_208">Login</button><button type="button" class="_m-signup-button_1hqxc_2017 _dark_1hqxc_208">Sign Up</button></div><div class="_m-login-container--mobile_1hqxc_1975"><button type="button" class="_m-login-button_1hqxc_1993">Login / Sign up</button></div></div></div></div></div></div></header><div class="_mobileNavigation_ptswr_2924 _dark_ptswr_307"><div class="_headerNavigation_ptswr_2924"><div class="_navigationRow_ptswr_2928"><a href="/learn" class="_navigationItem_ptswr_2933"><span class="_navigationLink_ptswr_2949 ">Learn</span></a><a class="_navigationItem_ptswr_2933" href="/practice"><span class="_navigationLink_ptswr_2949 ">Practice</span></a><a class="_navigationItem_ptswr_2933" href="/contests"><span class="_navigationLink_ptswr_2949 _activeItemTab_ptswr_2958">Compete</span></a></div></div></div><div class="_pageContainer_1se0b_3 _dark_1se0b_9" style="max-width: 100%;"><div style="display: block;"><div class="_compete-page__container_1c9os_2 _dark_1c9os_272"><div class="_cards__container_1c9os_5"><a href="https://www.codechef.com/START111" target="_blank" rel="noopener noreferrer" class="_bannerCard__container_126mf_2270 "><img src="https://cdn.codechef.com/download/contest_banner/1701781691.png" alt="Contest Banner"></a><a href="https://www.codechef.com/college-program?itm_medium=all-contests&amp;itm_campaign=banner" target="_blank" rel="noopener noreferrer" class="_bannerCard__container_126mf_2270 "><img src="https://cdn.codechef.com/download/contest_banner/1689776736.png" alt="Contest Banner"></a><div class="_smallCards_126mf_2184 _dark_126mf_110"><a href="https://www.codechef.com/practice"><div class="_skillScoreCard_126mf_1183 _selfLearningCard_126mf_2193 _mImageGamesWH_126mf_2151 _mImageCcGames_126mf_2156"><h1 class="_mCardHead_126mf_2237" style="margin-bottom: 10px;">Topic wise</h1><p class="_cardPara_126mf_2223">Curated Practice</p></div></a><a title="Upsolve" href="https://www.codechef.com/practice-old/recent"><div class="_skillScoreCard_126mf_1183 _selfLearningCard_126mf_2193 _mImageGamesWH_126mf_2151 _mImageStarters_126mf_2164"><p class="_cardPara_126mf_2223" style="height: auto;">Recent contest problems</p><h1 class="_mCardHead_126mf_2237 _longText_126mf_2230">Upsolve</h1></div></a></div></div><div class="_search-calendar__container_1c9os_45"><div class="_content__container_1c9os_29"><a class="_calendar__container_1c9os_52" href="https://www.codechef.com/event-calendar" target="_blank" rel="noopener noreferrer"><svg class="MuiSvgIcon-root _icon_1c9os_69 MuiSvgIcon-fontSizeSmall" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V10h16v11zm0-13H4V5h16v3z"></path></svg><p>Contest Calendar</p></a><div class="_showAllContest__container_1c9os_204"><p>Show all contests</p><span class="MuiSwitch-root jss1 _switch_1c9os_221"><span class="MuiButtonBase-root MuiIconButton-root jss6 MuiSwitch-switchBase jss2 MuiSwitch-colorPrimary" aria-disabled="false"><span class="MuiIconButton-label"><input class="jss9 MuiSwitch-input" type="checkbox" value=""><span class="MuiSwitch-thumb jss3"></span></span><span class="MuiTouchRipple-root"></span></span><span class="MuiSwitch-track jss4"></span></span></div></div></div><div class="_contest-tables__container_1c9os_225"><div class="_table__container_1c9os_331 _dark_1c9os_272"><div class="_title__container_1c9os_334"><p class="_title_1c9os_334">Ongoing Contests</p></div><div class="_dataTable__container_1c9os_369"><div class="MuiPaper-root jss11 undefined MuiPaper-elevation0 MuiPaper-rounded"><div class="jss22"></div><div class="jss14" style="position: relative; height: auto;"><table role="grid" class="MuiTable-root jss13 _mui-table__container_1c9os_374" tabindex="0"><caption class="jss20"></caption><thead class="MuiTableHead-root jss25 jss24"><tr class="MuiTableRow-root jss28 MuiTableRow-head"><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="0"><div>Code</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="1"><div>Name</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="2"><div>Start</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="3"><div>Duration</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="4"><div>Ends in</div></th></tr></thead><tbody class="MuiTableBody-root"><tr class="MuiTableRow-root jss57 undefined jss59 MuiTableRow-hover"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 datatables-noprint" data-colindex="0" colspan="5"><div class="jss61 jss62 jss65 jss66 datatables-noprint"></div><div class="jss61 jss66 datatables-noprint"><div class="MuiTypography-root jss54 MuiTypography-body1"><p class="_noMatch__text_1c9os_382">No contests available</p></div></div></td></tr></tbody></table></div><table class="MuiTable-root jss73"></table><div class="jss21" aria-live="polite"></div></div></div></div><div class="_table__container_1c9os_331 _dark_1c9os_272"><div class="_title__container_1c9os_334"><p class="_title_1c9os_334">Upcoming Contests </p></div><div class="_dataTable__container_1c9os_369"><div class="MuiPaper-root jss11 undefined MuiPaper-elevation0 MuiPaper-rounded"><div class="jss22"></div><div class="jss14" style="position: relative; height: auto;"><table role="grid" class="MuiTable-root jss13 _mui-table__container_1c9os_374" tabindex="0"><caption class="jss20"></caption><thead class="MuiTableHead-root jss25 jss24"><tr class="MuiTableRow-root jss28 MuiTableRow-head"><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="0"><div>Code</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="1"><div>Name</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="2"><div>Start</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="3"><div>Duration</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="4"><div>Starts in</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="5"><div> </div></th></tr></thead><tbody class="MuiTableBody-root"><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-0" id="MUIDataTableBodyRow-0"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-0"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START112</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-0"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START112"><span>Starters 112</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-0"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>13 Dec 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-0"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-0"><div class="jss61 jss62 jss65 jss66">Starts in</div><div class="jss61 jss66"><div class="_timer__container_1c9os_518"><p>6 Days</p><p>21 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _reminder__cell_1c9os_445" data-colindex="5" data-testid="MuiDataTableBodyCell-5-0"><div class="jss61 jss62 jss65 jss66 _reminder__cell_1c9os_445"> </div><div class="jss61 jss66 _reminder__cell_1c9os_445"><button type="button" class="_reminder-icon__container_1c9os_400" title="Set Reminder"><img src="https://cdn.codechef.com/images/icons/bell.svg" alt="bell"></button></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-1" id="MUIDataTableBodyRow-1"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-1"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START113</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-1"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START113"><span>Starters 113 </span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-1"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>20 Dec 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-1"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-1"><div class="jss61 jss62 jss65 jss66">Starts in</div><div class="jss61 jss66"><div class="_timer__container_1c9os_518"><p>13 Days</p><p>21 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _reminder__cell_1c9os_445" data-colindex="5" data-testid="MuiDataTableBodyCell-5-1"><div class="jss61 jss62 jss65 jss66 _reminder__cell_1c9os_445"> </div><div class="jss61 jss66 _reminder__cell_1c9os_445"><button type="button" class="_reminder-icon__container_1c9os_400" title="Set Reminder"><img src="https://cdn.codechef.com/images/icons/bell.svg" alt="bell"></button></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-2" id="MUIDataTableBodyRow-2"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-2"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START114</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-2"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START114"><span>Starters 114</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-2"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>27 Dec 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-2"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-2"><div class="jss61 jss62 jss65 jss66">Starts in</div><div class="jss61 jss66"><div class="_timer__container_1c9os_518"><p>20 Days</p><p>21 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _reminder__cell_1c9os_445" data-colindex="5" data-testid="MuiDataTableBodyCell-5-2"><div class="jss61 jss62 jss65 jss66 _reminder__cell_1c9os_445"> </div><div class="jss61 jss66 _reminder__cell_1c9os_445"><button type="button" class="_reminder-icon__container_1c9os_400" title="Set Reminder"><img src="https://cdn.codechef.com/images/icons/bell.svg" alt="bell"></button></div></td></tr></tbody></table></div><table class="MuiTable-root jss73"></table><div class="jss21" aria-live="polite"></div></div></div></div><div class="_table__container_1c9os_331 _dark_1c9os_272"><div class="_title__container_1c9os_334"><p class="_title_1c9os_334">Practice Contests</p></div><div class="_dataTable__container_1c9os_369"><div class="MuiPaper-root jss11 undefined MuiPaper-elevation0 MuiPaper-rounded"><div class="jss22"></div><div class="jss14" style="position: relative; height: auto;"><table role="grid" class="MuiTable-root jss13 _mui-table__container_1c9os_374" tabindex="0"><caption class="jss20"></caption><thead class="MuiTableHead-root jss25 jss24"><tr class="MuiTableRow-root jss28 MuiTableRow-head"><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="0"><div>Code</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="1"><div>Name</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="2"><div>Start</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="3"><div>Duration</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="4"><div>Participants</div></th></tr></thead><tbody class="MuiTableBody-root"><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-0" id="MUIDataTableBodyRow-0"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-0"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>ZCOPRAC</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-0"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/ZCOPRAC"><span>Past ZCO Problems</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-0"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>05 Nov 2018</p><p class="_grey__text_1c9os_393">Mon 0:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-0"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>13 Yrs</p><p>10 Months</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-0"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>34940</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-1" id="MUIDataTableBodyRow-1"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-1"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>INOIPRAC</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-1"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/INOIPRAC"><span>Past INOI Problems</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-1"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>05 Jan 2019</p><p class="_grey__text_1c9os_393">Sat 0:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-1"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>5 Yrs</p><p>6 Months</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-1"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>10869</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-2" id="MUIDataTableBodyRow-2"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-2"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>IARCSJUD</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-2"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/IARCSJUD"><span>IARCS OPC Judge Problems</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-2"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>09 Oct 2021</p><p class="_grey__text_1c9os_393">Sat 0:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-2"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>13 Yrs</p><p>10 Months</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-2"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>11145</p></div></td></tr></tbody></table></div><table class="MuiTable-root jss73"></table><div class="jss21" aria-live="polite"></div></div></div></div><div class="_table__container_1c9os_331 _dark_1c9os_272"><div class="_title__container_1c9os_334"><p class="_title_1c9os_334">Past Contests</p></div><div class="_dataTable__container_1c9os_369"><div class="MuiPaper-root jss11 undefined MuiPaper-elevation0 MuiPaper-rounded"><div class="jss22"></div><div class="jss14" style="position: relative; height: auto;"><table role="grid" class="MuiTable-root jss13 _mui-table__container_1c9os_374" tabindex="0"><caption class="jss20"></caption><thead class="MuiTableHead-root jss25 jss24"><tr class="MuiTableRow-root jss28 MuiTableRow-head"><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="0"><div>Code</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="1"><div>Name</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="2"><div>Start</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="3"><div>Duration</div></th><th class="MuiTableCell-root MuiTableCell-head jss40" scope="col" data-colindex="4"><div>Participants</div></th></tr></thead><tbody class="MuiTableBody-root"><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-0" id="MUIDataTableBodyRow-0"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-0"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START111</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-0"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START111"><span>Starters 111 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-0"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>06 Dec 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-0"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-0"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>24802</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-1" id="MUIDataTableBodyRow-1"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-1"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START110</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-1"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START110"><span>Starters 110 (Rated till 5-stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-1"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>29 Nov 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-1"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-1"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>25950</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-2" id="MUIDataTableBodyRow-2"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-2"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START109</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-2"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START109"><span>Starters 109 (Rated till 5 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-2"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>22 Nov 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-2"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-2"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>25019</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-3" id="MUIDataTableBodyRow-3"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-3"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START108</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-3"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START108"><span>Starters 108 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-3"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>15 Nov 2023</p><p class="_grey__text_1c9os_393">Wed 20:40</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-3"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p><p>15 Min</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-3"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>22637</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-4" id="MUIDataTableBodyRow-4"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-4"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START107</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-4"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START107"><span>Starters 107 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-4"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>08 Nov 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-4"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-4"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>27862</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-5" id="MUIDataTableBodyRow-5"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-5"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START106</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-5"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START106"><span>Starters 106 (Rated till 5 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-5"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>01 Nov 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-5"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-5"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>23596</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-6" id="MUIDataTableBodyRow-6"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-6"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START105</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-6"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START105"><span>Starters 105 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-6"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>25 Oct 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-6"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-6"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>20386</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-7" id="MUIDataTableBodyRow-7"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-7"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START104</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-7"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START104"><span>Starters 104 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-7"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>18 Oct 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-7"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-7"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>21011</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-8" id="MUIDataTableBodyRow-8"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-8"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START103</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-8"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START103"><span>Starters 103 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-8"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>11 Oct 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-8"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-8"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>23331</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-9" id="MUIDataTableBodyRow-9"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-9"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>STARTSQL</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-9"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/STARTSQL"><span>SQL Contest (Unrated)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-9"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>04 Oct 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-9"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-9"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>4087</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-10" id="MUIDataTableBodyRow-10"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-10"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START102</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-10"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START102"><span>Starters 102 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-10"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>27 Sep 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-10"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-10"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>22696</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-11" id="MUIDataTableBodyRow-11"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-11"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START101</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-11"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START101"><span>Starters 101 (Rated for Divs 2, 3 &amp; 4)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-11"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>20 Sep 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-11"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-11"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>26784</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-12" id="MUIDataTableBodyRow-12"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-12"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START100</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-12"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START100"><span>Starters 100 (Rated for All)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-12"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>13 Sep 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-12"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-12"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>27163</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-13" id="MUIDataTableBodyRow-13"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-13"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>SEP23</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-13"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/SEP23"><span>September Short 2023 (Unrated)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-13"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>06 Sep 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-13"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-13"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>11493</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-14" id="MUIDataTableBodyRow-14"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-14"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>AUG23</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-14"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/AUG23"><span>August Long 2023 (Unrated)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-14"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>30 Aug 2023</p><p class="_grey__text_1c9os_393">Wed 12:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-14"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>12 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-14"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>13063</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-15" id="MUIDataTableBodyRow-15"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-15"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START99</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-15"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START99"><span>Starters 99 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-15"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>19 Jul 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-15"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p><p>15 Min</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-15"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>22721</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-16" id="MUIDataTableBodyRow-16"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-16"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START98</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-16"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START98"><span>Starters 98 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-16"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>12 Jul 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-16"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p><p>30 Min</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-16"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>24256</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-17" id="MUIDataTableBodyRow-17"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-17"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START97</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-17"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START97"><span>Starters 97 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-17"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>05 Jul 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-17"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-17"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>22297</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-18" id="MUIDataTableBodyRow-18"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-18"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START96</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-18"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START96"><span>Starters 96 (Rated till 5 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-18"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>28 Jun 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-18"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-18"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>20178</p></div></td></tr><tr class="MuiTableRow-root jss57 undefined jss59 jss55 MuiTableRow-hover" data-testid="MUIDataTableBodyRow-19" id="MUIDataTableBodyRow-19"><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="0" data-testid="MuiDataTableBodyCell-0-19"><div class="jss61 jss62 jss65 jss66">Code</div><div class="jss61 jss66"><p>START95</p></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _name__cell_1c9os_439" data-colindex="1" data-testid="MuiDataTableBodyCell-1-19"><div class="jss61 jss62 jss65 jss66 _name__cell_1c9os_439">Name</div><div class="jss61 jss66 _name__cell_1c9os_439"><a href="https://www.codechef.com/START95"><span>Starters 95 (Rated till 6 Stars)</span></a></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72 _start-data__cell_1c9os_442" data-colindex="2" data-testid="MuiDataTableBodyCell-2-19"><div class="lastColumn jss61 jss62 jss65 jss66 _start-data__cell_1c9os_442">Start</div><div class="jss61 jss66 _start-data__cell_1c9os_442"><div><div class="_start-date__container_1c9os_388"><p>21 Jun 2023</p><p class="_grey__text_1c9os_393">Wed 20:00</p></div></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="3" data-testid="MuiDataTableBodyCell-3-19"><div class="jss61 jss62 jss65 jss66">Duration</div><div class="jss61 jss66"><div class="_duration__container_1c9os_396"><p>2 Hrs</p></div></div></td><td class="MuiTableCell-root MuiTableCell-body jss61 jss68 jss72" data-colindex="4" data-testid="MuiDataTableBodyCell-4-19"><div class="jss61 jss62 jss65 jss66">Participants</div><div class="jss61 jss66"><p>22199</p></div></td></tr></tbody></table></div><table class="MuiTable-root jss73"></table><div class="jss21" aria-live="polite"></div></div></div></div></div><div class="MuiCircularProgress-root _circular__progress_1c9os_237 MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate" role="progressbar" style="width: 40px; height: 40px; display: block;"><svg class="MuiCircularProgress-svg" viewBox="22 22 44 44"><circle class="MuiCircularProgress-circle MuiCircularProgress-circleIndeterminate" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle></svg></div><div class="_go-to-top__fab_1c9os_244" style="display: none;"><p>Go to Top</p><svg class="MuiSvgIcon-root _arrow__up-icon_1c9os_266" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></svg></div><div></div></div></div></div><footer class="_l-footer_1s2yr_2 _dark_1s2yr_23"><div class="_l-footer__content_1s2yr_28 _m-footer__content_1s2yr_35"><div class="_l-footer__links_1s2yr_40"><div class="_l-footer__column_1s2yr_167"><div class="_l-footer__head_1s2yr_80"><p class="_m-footer__head_1s2yr_73">Learning Resources</p></div><div class="_l-footer__list_1s2yr_49"><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/learn">Learning paths</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/practice">Practice Problems</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="https://discuss.codechef.com">CodeChef Discuss</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/wiki/faq">FAQ's</a></div></div></div><div class="_l-footer__column_1s2yr_167"><div class="_l-footer__head_1s2yr_80"><p class="_m-footer__head_1s2yr_73">Programming Tools</p></div><div class="_l-footer__list_1s2yr_49"><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/ide">Online IDE</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/contests#future-contests">Upcoming Coding Contests</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/hostyourcontest">Host Your Contest</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/problemsetting">Problem Setting</a></div></div></div><div class="_l-footer__column_1s2yr_167"><div class="_l-footer__head_1s2yr_80"><p class="_m-footer__head_1s2yr_73">More</p></div><div class="_l-footer__list_1s2yr_49"><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="https://business.codechef.com">CodeChef For Business</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/contactus">Contact Us</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/codeofconduct">Code Of Conduct</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/rankings">User Ranklist</a></div></div></div><div class="_l-footer__column_1s2yr_167"><div class="_l-footer__head_1s2yr_80"><p class="_m-footer__head_1s2yr_73">Usage Policy</p></div><div class="_l-footer__list_1s2yr_49"><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/privacy-policy">Privacy policy</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/terms">Terms</a></div><div class="_l-footer__link_1s2yr_40"><a class="_m-footer__link_1s2yr_62 _dark_1s2yr_23" href="/other-policies">Other Policy</a></div></div></div></div></div><div class="_l-footer__social_1s2yr_96 _dark_1s2yr_23"><div class="_m-footer__social_1s2yr_125"><div class="_l-footer__site_1s2yr_120"><a class="_m-footer__site_1s2yr_111 _dark_1s2yr_23 undefined" href="https://www.codechef.com">www.codechef.com</a></div><div class="_l-footer__follow-sec_1s2yr_104"><div class="_l-footer__follow_1s2yr_104"><span class="_m-footer__follow_1s2yr_139 _dark_1s2yr_23">Follow Us</span></div><div class="_l-footer__icons_1s2yr_151 _dark_1s2yr_23"><a class="_m-social_1s2yr_222 _i-youtube_1s2yr_255" href="//youtube.com/c/codechef1"></a><a class="_m-social_1s2yr_222 _i-telegram_1s2yr_252" href="//t.me/learncpwithcodechef"></a><a class="_m-social_1s2yr_222 _i-facebook_1s2yr_249" href="//facebook.com/CodeChef"></a><a class="_m-social_1s2yr_222 _i-instagram_1s2yr_243" href="//instagram.com/codechef"></a><a class="_m-social_1s2yr_222 _i-twitter_1s2yr_246" href="//twitter.com/codechef"></a><a class="_m-social_1s2yr_222 _i-medium_1s2yr_240" href="//medium.com/codechef-official"></a><a class="_m-social_1s2yr_222 _i-quora_1s2yr_237" href="//quora.com/topic/CodeChef"></a><a class="_m-social_1s2yr_222 _i-linkedin_1s2yr_234" href="//linkedin.com/company/codechef"></a></div></div></div></div></footer><div id="gdpr-cookie-notif" class="_global--announcement_xcnwk_1" style="display: none;"><div class="_global--announcement__content_xcnwk_19"><p>We use cookies to improve your experience and for analytical purposes. Read our <a class="" href="https://www.codechef.com/privacy-policy">Privacy Policy</a> and <a class="" href="https://www.codechef.com/terms">Terms</a> to know more. You consent to our cookies if you continue to use our website.</p></div><div class="_global--announcement__action_xcnwk_33"><button type="button" id="gdpr-i-love-cookies">Okay</button></div></div></div></div>
+  <script>
+    if (window.location.pathname.split('/')[1] === 'pro') {
+      // const razorPay = document.createElement('script');
+      // razorPay.setAttribute('src', 'https://checkout.razorpay.com/v1/checkout.js');
+      // document.head.appendChild(razorPay);
+
+      const instamojo = document.createElement('script');
+      instamojo.setAttribute('src', 'https://js.instamojo.com/v1/checkout.js');
+      document.head.appendChild(instamojo);
+
+    }
+    if (window.location.pathname.split('/')[1] !== 'games') {
+      const scriptElement = document.createElement('script');
+      scriptElement.setAttribute('src',
+        "/sites/all/modules/codechef_alerts/codechef_alerts.js?v=649c43b6894169b33b5557aa0374459d"
+      );
+      document.body.appendChild(scriptElement);
+    }
+  </script><script type="text/javascript" id="">(function(a,e,b,f,g,c,d){a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};c=e.createElement(f);c.async=1;c.src="https://www.clarity.ms/tag/"+g;d=e.getElementsByTagName(f)[0];d.parentNode.insertBefore(c,d)})(window,document,"clarity","script","3wyy3fxv0y");</script><script src="/sites/all/modules/codechef_alerts/codechef_alerts.js?v=649c43b6894169b33b5557aa0374459d"></script>
+  <script type="text/javascript" src="/sites/all/themes/mallow/src/js/cookies.js?v=c0c952b5f5af42bd78098f00c77cfa63"></script>
+  
+
+
+
+<div style="top: 0px; left: 0px; position: fixed; display: none; place-items: center; height: 100vh; width: 100vw; z-index: 10000; line-height: 1.5; font-size: 16px; backdrop-filter: blur(2px); background: rgba(0, 0, 0, 0.1); box-sizing: border-box;"></div></body></html>
